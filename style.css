@@ -7,12 +7,21 @@
 
 body {
     margin: 0;
-    background-color: yellow;
+    background-color: white;
     font-family: 'Rubik';
-
 
 }
 
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    font-family: 'Rubik';
+    color: black;
+    font-size: 1rem;
+}
 
 img {
     width: 100%;
@@ -79,7 +88,7 @@ a {
 header {
     display: flex;
     position: fixed;
-    background-color: white;
+    background: linear-gradient(#654597, #65459787);
     width: 100%;
     z-index: 1;
 
@@ -116,7 +125,6 @@ section {
     font-family: 'Rubik';
     clear: right;
     padding-right: 10px;
-    /****SKRIV**/
     position: relative;
 
 }
@@ -137,7 +145,11 @@ label {
 
 #toggle:checked + .menu {
     display: inline-grid;
-    background-color: white;
+    /*background-color: white;*/
+    background-color: #65459787;
+    font-size: 22.6px;
+    font-weight: bold;
+
 }
 
 
@@ -156,6 +168,10 @@ label {
 .emma {
     font-weight: bold;
 
+}
+
+.hide {
+    display: none;
 }
 
 /***************************OM******************************/
@@ -231,6 +247,14 @@ label {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 20px;
+
+}
+
+.photo_1 {
+    width: 70%;
+    height: auto;
+    margin: auto;
 
 }
 
@@ -248,6 +272,7 @@ label {
 
 .document_links {
     padding-left: 60px;
+    padding-top: 20px;
 }
 
 #grund_animation .txtbox {
@@ -283,14 +308,19 @@ label {
         position: unset;
         top: 16vw;
         display: inline;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+
+    a:hover {
+        color: #654597;
     }
 
 
     #splash {
         width: 100vw;
-        /*height: 56.25vw;*/
-        /*om jag är in inspector och kollar på min splash så ska heigt ändras till nedan*/
-        height: 46.25vw;
+        height: 100vh;
         max-width: none;
         background-image: url(assets/glitter_splash.png);
         background-size: cover;
@@ -315,9 +345,20 @@ label {
     #om h1 {
         text-align: left;
 
-
     }
 
+    header {
+        background: white;
+    }
+
+    .first {
+        padding-left: 218px;
+    }
+
+    .photo_1 {
+        width: 55%;
+        padding-top: 20px;
+    }
 
 
     /********SPLASH FOR DESKTOP*******/
@@ -369,5 +410,6 @@ label {
         font-size: 50px;
         display: none;
     }
+
 
 }

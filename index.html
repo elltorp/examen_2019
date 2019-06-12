@@ -26,8 +26,10 @@
     <div id="horizontal1" class="horizontal_line"></div>
     <div id="horizontal2" class="horizontal_line_2"></div>
     <div id="vertical1" class="vertical_line"></div>
-    <div id="portfolio1" class="portfolio">Portfo io</div>
-    <div id="emma1" class="emma">Emma Elltorp</div>
+    <span id="#portfolio_emma">
+        <div id="portfolio1" class="portfolio">Portfo io</div>
+        <div id="emma1" class="emma">Emma Elltorp</div>
+    </span>
 
     <section id="splash"></section>
 
@@ -47,7 +49,7 @@
                 <h3>Framtidsplaner </h3>
                 <p>Jag tycker om ordning och reda och har svårt att förhålla mig i grupper där det saknas tydlighet och struktur. Därför lutar det åt att det här blir min fösta och sista semster på KEA. I höst så ska jag kanske göra något annat än det här, men först ska jag avklara några festivaler och bocka av fler restaurangbesök!</p>
 
-                <h4><b><br>- Musik och mat är livet!</b></h4>
+                <h4><b><br>-Emma</b></h4>
             </div>
 
             <div class="col">
@@ -62,8 +64,8 @@
         <h2>TEMA 1</h2>
         <div class="sectionwrapper">
             <div class="top">
-                <p>Under det första temat så täcktes perioden av en bred kunskap för att kunna skapa hemsidor med ett tydligt designuttryck. Här presenterades olika stilarter och jag fick gå djupare i eran om Swiss Style. Här stod asymmetri i fokus, tillsammans med en mix av både dova och skarpa färger och san-serif som fick ta utryck i den hemsida jag avslutningsvis av detta tema skapade för att återspegla stilarten.
-                    Till hjälp för att skapa denna sida använde jag mig av grundläggande teorier och verktyg till designen inom grundläggande kunskap om färgteorier, typografi, moodboard och textuppsättning. <br>
+                <p>Under det första temat så täcktes perioden av en bred kunskap för att kunna skapa hemsidor med ett tydligt designuttryck. Här presenterades olika stilarter och jag fick gå djupare i eran om Swiss Style. Här stod asymmetri i fokus, tillsammans med en mix av både dova och skarpa färger och san-serif som fick ta utryck i den hemsida jag avslutningsvis av detta tema skapade för att återspegla stilarten. <br>
+                    Till hjälp för att skapa denna sida använde jag mig av grundläggande teorier och verktyg till designen inom grundläggande kunskap och principer om färgteorier, typografi, moodboard och textuppsättning. <br>
 
 
 
@@ -81,8 +83,15 @@
             <div class="txtbox">
                 <h3>Språk i struktur och styling</h3>
                 <p>Hela projektet kodades i HTML och CSS genom satta layoutdiagram som förenklade processen i samband med kunskaper om Flex-box, som är en layoutmodell inom CSS. Genom Flex-box fick jag möjlighet att skapa och styra rymdfördelning mellan objekt i ett gränssnitt och styra placeringen på en responsiv sida. Till hjälp för att anpassa storleken ytligare en dimension så användes Media querys för att anpassa designen till fullo på de olika skärmstorlekarna. </p>
-                <b><a href="http://elltorp.one/kea/01-web/04-responsive/01_04_02_responsive_site_v2/index.html?1">//01.04.02 RESPONSIV SITE//</a></b>
+
             </div>
+            <div class="image_bottom photo_1">
+                <img src="assets/responsive_v2.jpg" alt="screenshot">
+            </div>
+            <div class="document_links first">
+                <b><a href="http://elltorp.one/kea/01-web/04-responsive/01_04_02_responsive_site_v2/index.html?1">//01.04.02//</a></b>
+            </div>
+
 
 
 
@@ -147,10 +156,10 @@
 
             </div>
             <div class="document_links">
-                <b><a href="assets/02_01_04_spil_emmaelltorp.pdf">//02.01.04 ASSETTLISTE OG DESIGNPRODUKTION//</a></b>
-                <br> <b><a href="assets/03_03_04_animation_emmaelltorp.pdf">//03.03.04 ANIMATIONSOPGAVE//</a></b>
+                <b><a href="assets/02_01_04_spil_emmaelltorp.pdf">//02.01.04//</a></b>
+                <br> <b><a href="assets/03_03_04_animation_emmaelltorp.pdf">//03.03.04//</a></b>
                 <br>
-                <b><a href="http://freddyspaghetti.dk/kea/02-animation/Gruppe-11_dokumentationssite/">//02.05.03 FERDIG OPGAVE//</a></b>
+                <b><a href="http://freddyspaghetti.dk/kea/02-animation/Gruppe-11_dokumentationssite/">//02.05.03//</a></b>
             </div>
 
         </div>
@@ -194,7 +203,7 @@
     <script>
         //start animation
         $(document).ready(function() {
-
+            $("#portfolio_emma").addClass("hide");
             //the dollar sign represent the "document.queryselector" and in the parentes you just write the element you want to select
             $("#portfolio1").fadeIn(1500);
             $("#emma1").fadeIn(3000);
@@ -204,10 +213,13 @@
         });
 
     </script>
-
-
-
     <script src=""></script>
+
+
+    <footer>
+        &copy; 2019 by Emma Elltorp
+
+    </footer>
 </body>
 
 </html>

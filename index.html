@@ -26,10 +26,10 @@
     <div id="horizontal1" class="horizontal_line"></div>
     <div id="horizontal2" class="horizontal_line_2"></div>
     <div id="vertical1" class="vertical_line"></div>
-    <span id="#portfolio_emma">
+    <div id="portfolio_emma">
         <div id="portfolio1" class="portfolio">Portfo io</div>
         <div id="emma1" class="emma">Emma Elltorp</div>
-    </span>
+    </div>
 
     <section id="splash"></section>
 
@@ -197,14 +197,19 @@
 
 
 
-    <!--JAG FICK HJÄLP AV EN TURTOR ATT GÖRA DEN HÄR ANIMATIONEN-->
+    <!--JAG FICK HJÄLP AV EN TURTOR ATT GÖRA DEN HÄR ANIMATIONEN i JQUERY-->
     <script src="jquery-3.4.1.min.js"></script>
 
     <script>
         //start animation
         $(document).ready(function() {
-            $("#portfolio_emma").addClass("hide");
-            //the dollar sign represent the "document.queryselector" and in the parentes you just write the element you want to select
+
+            //om min bredd är mobilbredd så vill jag hida portfolio_emma-id't genom att skapa en disply non på m in class "hide".
+            let width = $(window).width();
+            if (width <= 375) {
+                $("#portfolio_emma").hide();
+            }
+            //Dollar sign representerar "document.queryselector" och i parentesen skriver du vilket element du vill selecta för animationen som sker efter.
             $("#portfolio1").fadeIn(1500);
             $("#emma1").fadeIn(3000);
             $("#horizontal1").fadeIn(500);
@@ -213,7 +218,7 @@
         });
 
     </script>
-    <script src=""></script>
+
 
 
     <footer>

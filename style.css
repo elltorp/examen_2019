@@ -85,6 +85,7 @@ a {
 
 }
 
+
 header {
     display: flex;
     position: fixed;
@@ -203,17 +204,24 @@ label {
 
 }
 
+.document_links {
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
 /******************* PORTFOLIO*****************/
 /****grundläggande HTML TEMA 1*****/
 
 #grund_html {
-    background-color: #EDEAED;
+    background-color: #C5C3C6;
 }
 
+/*
 #grund_html .sectionwrapper {
     padding-bottom: 50px;
 
 }
+*/
 
 #grund_html .top {
     margin-left: auto;
@@ -230,18 +238,40 @@ label {
     padding-top: 50px;
 }
 
+.photo_1 {
+    /*
+    width: 70%;
+    height: auto;
+    margin: auto;
+*/
+    padding-top: 25px;
+
+}
+
+/*
+#grund_html .document_links first {
+    padding-left: 36px;
+    padding-top: 20px;
+}
+
+#grund_html .document_links {
+    padding-bottom: 10px;
+
+}
+*/
 
 /*****Grundläggande ANIMATION, TEMA 2***/
 
 #grund_animation {
-    background-color: #C5C3C6;
+    background-color: #EDEAED;
 }
 
+/*
 #grund_animation .sectionwrapper {
     padding-bottom: 50px;
 
 }
-
+*/
 
 .img_bottom {
     display: flex;
@@ -251,18 +281,15 @@ label {
 
 }
 
-.photo_1 {
-    width: 70%;
-    height: auto;
-    margin: auto;
-
-}
 
 .image {
     flex-basis: 400px;
     flex-grow: 1;
+    /*
     padding-left: 60px;
     padding-right: 60px;
+*/
+
 }
 
 
@@ -270,10 +297,12 @@ label {
     padding-top: 50px;
 }
 
-.document_links {
-    padding-left: 60px;
+/*
+#grund_animation .document_links {
+        padding-left: 60px;
     padding-top: 20px;
 }
+*/
 
 #grund_animation .txtbox {
     margin-left: auto;
@@ -283,7 +312,7 @@ label {
 /*********GRUND VIDEO TEMA 3**********/
 
 #grund_video {
-    background-color: #EDEAED;
+    background-color: #C5C3C6;
 }
 
 
@@ -339,7 +368,7 @@ label {
 
     /* jag talar till alla sectionwrappers förutom den som jag också har gett en extra id till*/
     .sectionwrapper:not(#om-section) {
-        padding: 20px 130px;
+        padding: 20px 170px;
     }
 
     #om h1 {
@@ -351,14 +380,24 @@ label {
         background: white;
     }
 
+
     .first {
-        padding-left: 218px;
+        padding-left: 159px;
+        /*        padding-top: 10px;*/
     }
 
     .photo_1 {
-        width: 55%;
+        /*        width: 55%;*/
+        width: 65%;
+        height: auto;
+        margin: auto;
         padding-top: 20px;
     }
+
+    .document_links {
+        padding-top: 10px;
+    }
+
 
 
     /********SPLASH FOR DESKTOP*******/

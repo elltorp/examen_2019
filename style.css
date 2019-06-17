@@ -78,6 +78,10 @@ h3 {
 
 }
 
+h4 {
+    padding-left: 240px;
+}
+
 a {
     text-decoration: none;
     font-family: 'IBM Plex Serif';
@@ -353,7 +357,6 @@ label {
         max-width: none;
         background-image: url(assets/glitter_splash.png);
         background-size: cover;
-
     }
 
 
@@ -373,7 +376,10 @@ label {
 
     #om h1 {
         text-align: left;
+    }
 
+    h4 {
+        padding-left: 455px;
     }
 
     header {

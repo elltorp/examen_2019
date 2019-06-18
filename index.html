@@ -243,71 +243,80 @@
 
 
 
-    <section id="grund_animation">
+    <section id="grund_ux">
         <h1>Grundläggande UX</h1>
         <h2>TEMA 4</h2>
         <div class="sectionwrapper">
             <div class="top">
-                <p>LOREM IOSUM INTRO
-
-                </p>
-
-
-            </div>
-
-            <div class="txtbox">
-                <h3>XXX</h3>
                 <p>
-                    LOREM IPSUM
-
+                    Inom det sista temat så har jag fått en grundläggande förståelse för samspel mellan hårdvara och användare. Jag har använt mig av metoder så som Design Sprint som resulterat i att jag kunnat skapa en prototyp av en digital lösning som användaren integrerat med på ett lätt och effektivt sätt och enkelt kunna uppnå ändamålet med produkten.
+                    <br>
+                    Adobe XD har främst varit det program jag arbetat i som gett mig ytligare färdigheter i hur man skapar digitala prototyper och lösningsförslag.
+                    Avslutningsvis i temat har jag kunnat använda mig av presentationsprinciper vi framläggning och pitch av prototyp.
                 </p>
 
-            </div>
-            <div class="img_bottom">
-                <div class="image">
-                    <img src="assets/frog_skiss.jpg" alt="skiss_frog">
-                </div>
-
-            </div>
-            <div class="txtbox">
-                <h3>XXXX</h3>
-                <p>LOREM IPSUM
-                </p>
-
-            </div>
-
-
-            <div class="img_bottom">
-                <div class="image">
-                    <img src="assets/nude_skiss.jpg" alt="skiss_private">
-                </div>
-
-                <div class="image">
-                    <img src="assets/privat_skiss.jpg" alt="skiss_spelskärm">
-                </div>
 
             </div>
 
             <div class="txtbox">
-                <h3>XXXX</h3>
+                <h3> Design Sprint, modul 1</h3>
                 <p>
-                    LOREM IPSUM.
+                    Ux-temat täcktes av tre moduler där jag inom den första modulen blev introducerad till Design Sprint som gav mig färdigheter inom projektledning för att kunna jobba strukturerat i en produktion och hur jagunder en specifik tidsram kan arbeta fram till en framtagning av fungerande prototyp utifrån kartläggning av problematik.
                 </p>
 
-            </div>
+                <div class="txtbox">
+                    <h3> Webbprototyp, modul 2</h3>
+                    <p>
+                        Under modul två fick jag först möjlighet att själv skapa ett eget digitalt förslag i form av en prototyp skapad i Adobe XD på en integrerad app av Fronter och KEA för att senare skapa ytligare en funktionell lösning på en tänkt Fronter-lösning. Sidan kodades i mobile-first med HTML, CSS och JS utifrån en fast prototyp.
+                    </p>
 
-            <div class="img_bottom">
-                <div class="image">
-                    <a href="http://floedefyren.dk/kea/02-animation/04-projekt/spil_new/index.html"><img src="assets/privatsnack.png" alt="screendump_private"></a>
+                    <h3>Mitt egna förslag på digital lösning</h3>
+                    <div class="document_links">
+                        <b><a href="https://xd.adobe.com/view/99b99a24-e802-414f-5aed-a75f7e4eb70e-ef88/screen/1b7759b9-f316-48b4-9e8d-330e0d5675d4/log-in2">//04.01.01//</a></b>
+                    </div>
                 </div>
 
-                <div class="image">
-                    <a href="http://elltorp.one/kea/02-animation/spil/index.html"><img src="assets/frog.png" alt="screendump_frog"></a>
+                <div class="txtbox">
+                    <h3>Native app för Tech lounge, modul 3</h3>
+                    <p>
+                        I modul 3 skulle vi i grupp skapa en prototyp till en native app som skulle göra studielivet bättre på KEA för de studerande. Vi valde att skapa en prototyp för Tech loung så att man på et enkelt sätt kan låna teknik och skapa en god överblick över det som kan lånas.
+                        <br>
+                        I denna del förfinades mina kunskaper i Design sprint och huruvida vid som grupp kunde skapa bäst förutsättningar för att nå fram till en användarvänlig digital lösning under en satt tidsram.
+                        <br>
+                        Team Canvas gav oss grundförutsättningar för att kunna definiera vilka vi var som grupp, individuella mål och gruppmål och huruvida projektets gång skulle fortlöpa.
+                    </p>
+
                 </div>
 
+                <div class="img_bottom">
+                    <div class="image image_1">
+                        <img src="assets/team_c.png" alt="team canvas">
+                    </div>
+                </div>
+
+                <div class="txtbox">
+                    <h3>Undersökning av problemområde, modul 3</h3>
+                    <p>
+
+                        Under denna fas intervjuades personal i Tech lounge och vi kunde också ta riktning på den produkt vi ville skapa. Efter intervjun fick problemställningen kring det vi tagit utgångspunkt fler dimensioner i alternativa lösningar och vi kunde kartlägga de reella behov som behövdes fyllas och bestämma oss för vilken riktning vi ville i gå åt med grund för vårt Long term goal.
+                        <br>
+                        Härefter följdes ett Design Sprint som vi tidigare fått kunskaper om som vi kunde följa fram till det slutliga lösningsförslag och prototyp.
+                    </p>
+
+                </div>
+
+                <div class="txtbox">
+                    <h3>Reflektion och färdigheter, modul 3</h3>
+                    <p>
+                        Under processen fick jag färdigheter inom projektstyrning, five act intervju, med inkluderande tänk-högt-test och produktion till digital lösning. Jag har fått kunskaper hur man på olika sätt kan samla in och använda empirisk data om min användare och användarsituationen.
+                    </p>
+
+                </div>
+
+
+
+
             </div>
-
-
         </div>
 
     </section>
@@ -321,18 +330,19 @@
         //start animation
         $(document).ready(function() {
 
-            //om min bredd är mobilbredd så vill jag hida portfolio_emma-id't genom att skapa en disply non på m in class "hide".
+            //om min bredd är mobilbredd så vill jag hida portfolio_emma-id't genom att skapa en disply none på min class "hide".
             let width = $(window).width();
             if (width <= 375) {
                 $("#portfolio_emma").hide();
             }
-            //Dollar sign representerar "document.queryselector" och i parentesen skriver du vilket element du vill selecta för animationen som sker efter.
+            //Dollar sign representerar "document.queryselector" och i parentesen skriver jag vilket element jag vill selecta för animationen som sker efter, inom sista parentesen skrivs millisekunderna.
             $("#portfolio1").fadeIn(1500);
             $("#emma1").fadeIn(3000);
             $("#horizontal1").fadeIn(500);
             $("#horizontal2").fadeIn(500);
             $("#vertical1").slideDown(1000);
         });
+
     </script>
 
 
@@ -341,4 +351,6 @@
         &copy; 2019 by Emma Elltorp
 
     </footer>
-</body></html>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-/*mobile first*/
+/*mobile first, generella*/
 
 * {
     box-sizing: border-box;
@@ -134,6 +134,35 @@ section {
 
 }
 
+/***generella***/
+
+.photo_1 {
+    padding-top: 25px;
+
+}
+
+.document_links {
+    padding-bottom: 30px;
+    padding-top: 15px;
+}
+
+.img_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+
+}
+
+
+.image {
+    flex-basis: 400px;
+    flex-grow: 1;
+
+}
+
+
+/****BURGER-INSTÄLLNINGAR****/
 /*display döljer min burgericon från start, resten är style*/
 label {
     margin: 0 40px 0 0;
@@ -158,7 +187,7 @@ label {
 }
 
 
-/***************************SPLASH******************************/
+/******SPLASH INSTÄLLNINGAR********/
 #splash {
     width: 100vw;
     height: 178vw;
@@ -179,7 +208,7 @@ label {
     display: none;
 }
 
-/***************************OM******************************/
+/********OM**********/
 #om {
 
     background-color: #DDCDF2;
@@ -208,10 +237,7 @@ label {
 
 }
 
-.document_links {
-    padding-bottom: 30px;
-    padding-top: 15px;
-}
+
 
 /******************* PORTFOLIO*****************/
 /****grundläggande HTML TEMA 1*****/
@@ -220,12 +246,6 @@ label {
     background-color: #C5C3C6;
 }
 
-/*
-#grund_html .sectionwrapper {
-    padding-bottom: 50px;
-
-}
-*/
 
 #grund_html .top {
     margin-left: auto;
@@ -242,27 +262,6 @@ label {
     padding-top: 50px;
 }
 
-.photo_1 {
-    /*
-    width: 70%;
-    height: auto;
-    margin: auto;
-*/
-    padding-top: 25px;
-
-}
-
-/*
-#grund_html .document_links first {
-    padding-left: 36px;
-    padding-top: 20px;
-}
-
-#grund_html .document_links {
-    padding-bottom: 10px;
-
-}
-*/
 
 /*****Grundläggande ANIMATION, TEMA 2***/
 
@@ -270,43 +269,11 @@ label {
     background-color: #EDEAED;
 }
 
-/*
-#grund_animation .sectionwrapper {
-    padding-bottom: 50px;
-
-}
-*/
-
-.img_bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 20px;
-
-}
-
-
-.image {
-    flex-basis: 400px;
-    flex-grow: 1;
-    /*
-    padding-left: 60px;
-    padding-right: 60px;
-*/
-
-}
-
 
 #grund_animation h1 {
     padding-top: 50px;
 }
 
-/*
-#grund_animation .document_links {
-        padding-left: 60px;
-    padding-top: 20px;
-}
-*/
 
 #grund_animation .txtbox {
     margin-left: auto;
@@ -325,6 +292,17 @@ label {
     margin-right: auto;
 }
 
+#grund_video .sectionwrapper {
+    padding-bottom: 20px;
+}
+
+
+
+/*****GRUND UX TEMA 4****/
+
+#grund_ux {
+    background-color: #EDEAED;
+}
 
 
 /*****allt större än 700px ska bete sig så här*****/
@@ -404,11 +382,12 @@ label {
         padding-top: 10px;
     }
 
+    #grund_ux .image_1 {
+        padding-right: 50px;
+    }
 
 
-    /********SPLASH FOR DESKTOP*******/
-
-    /*JAG HAR FÅTT HJÄLP AV TUTORS ATT ADDERA SJÄLVA ANIMATIONEN //JAVAQUERY-ANIMATION// */
+    /********STYLE FOR ANIMATION PÅ SPLASH*******/
 
     .horizontal_line {
         height: 10px;

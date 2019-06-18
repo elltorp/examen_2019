@@ -25,6 +25,7 @@ footer a {
 
 img {
     width: 100%;
+
 }
 
 
@@ -89,6 +90,10 @@ a {
 
 }
 
+.modul {
+    font-size: 1rem;
+    color: #654597;
+}
 
 header {
     display: flex;
@@ -137,7 +142,7 @@ section {
 /***generella***/
 
 .photo_1 {
-    padding-top: 25px;
+    padding-top: 20px;
 
 }
 
@@ -146,10 +151,13 @@ section {
     padding-top: 15px;
 }
 
+.img_top {
+    padding-top: 15px;
+}
+
 .img_bottom {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-top: 20px;
 
 }
@@ -158,9 +166,8 @@ section {
 .image {
     flex-basis: 400px;
     flex-grow: 1;
-
+    margin-top: 8px;
 }
-
 
 /****BURGER-INSTÄLLNINGAR****/
 /*display döljer min burgericon från start, resten är style*/
@@ -187,7 +194,7 @@ label {
 }
 
 
-/******SPLASH INSTÄLLNINGAR********/
+/******SPLASH STYLE********/
 #splash {
     width: 100vw;
     height: 178vw;
@@ -297,13 +304,19 @@ label {
 }
 
 
-
 /*****GRUND UX TEMA 4****/
 
 #grund_ux {
     background-color: #EDEAED;
 }
 
+#grund_ux .sectionwrapper {
+    padding-bottom: 20px;
+}
+
+#grund_ux .document_links {
+    padding-bottom: 5px;
+}
 
 /*****allt större än 700px ska bete sig så här*****/
 @media (min-width: 700px) {
@@ -346,7 +359,6 @@ label {
         padding-right: 10px;
     }
 
-
     /* jag talar till alla sectionwrappers förutom den som jag också har gett en extra id till*/
     .sectionwrapper:not(#om-section) {
         padding: 20px 170px;
@@ -356,22 +368,20 @@ label {
         text-align: left;
     }
 
-    h4 {
-        padding-left: 455px;
-    }
-
     header {
         background: white;
     }
 
+    /* pluset skapar magin endast mellan childen */
+    #grund_animation .image + .image {
+        margin-left: 10px;
+    }
 
     .first {
         padding-left: 159px;
-        /*        padding-top: 10px;*/
     }
 
     .photo_1 {
-        /*        width: 55%;*/
         width: 65%;
         height: auto;
         margin: auto;
